@@ -17,12 +17,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.license = "MIT"
   s.require_paths = ["lib"]
-
-  if RUBY_PLATFORM == "java"
-    s.add_dependency "activerecord-jdbcpostgresql-adapter"
-  else
-    s.add_dependency "pg"
-  end
+  s.add_dependency "activerecord-jdbcpostgresql-adapter"
 
   s.add_dependency "activerecord", ">= 3.1.0"
 
